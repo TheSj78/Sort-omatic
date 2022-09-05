@@ -1,0 +1,84 @@
+<nav>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+        nav {
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            background: transparent;
+        }
+        
+        nav p {
+            color: #202731;
+            text-decoration: none;
+            font-size: 3rem;
+            font-weight: bold;
+            padding: 10px;
+            margin: 50px;
+            margin-top: 28px;
+            border-radius: 10px;
+            border: 2.5px solid #202731;
+            transition: all 0.4s ease-in-out;
+        }
+
+        nav p:hover:before {
+            content: 'made by shubie & shikhar';
+        }
+
+        nav p:hover span {
+            background: #202731;
+            color: #00ff33;
+            display: none;
+        }
+
+        .buttons {
+            margin-top: 40px;
+            justify-content: right;
+        }
+
+        .buttons a {
+            color: #202731;
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: bold;
+            padding: 10px;
+            margin: 10px;
+            margin-top: 20px;
+            border-radius: 10px;
+            border: 2.5px solid #202731;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .buttons a:hover {
+            background: #202731;
+            color: #00ff33;
+        }
+
+        .waves {
+            background-image: url('./navbar_alt.svg');
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            width: 0%;
+            height: 600px;
+        }
+
+        .spacer {
+            aspect-ratio: 960/300;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+
+    <div class="spacer waves"></div>
+    <p><span>Sort-omatic <i class="fa-solid fa-leaf"></i></span></p>
+    <div class="buttons">
+        <a href="/">Home <i class="fa-solid fa-house-chimney"></i></a>
+       <!-- <a href="/about-us">About <i class="fa-solid fa-user"></i></a> -->
+        <a href="/contact-us">Contact Us <i class="fa-solid fa-envelope"></i></a>
+        <a style="margin-right: 40px;" href="/stats">My Stats <i class="fa-solid fa-chart-column"></i></a>
+    </div> 
+</nav>
